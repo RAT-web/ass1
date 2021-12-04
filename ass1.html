@@ -1,0 +1,22 @@
+<!--
+Prog No:1
+Prog Name:Display the current day, date and time in dd/mm/yyyy hh:mm:ss format
+Date:4/12/2020
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment1</title>
+	</head>
+	<body style="font-size:34px">
+	<script language="javascript" text="text/javascript">
+			var today=new Date();
+			var date=today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
+			var time=today.getHours()+":"+today.getMinutes()+":"+today.getSeconds();
+			document.write("<h1>Current date:</h1>"+date);
+			document.write("<br>");
+			document.write("<h1>Current time:</h1>"+time);
+			
+		</script>
+	</body>
+</html>
